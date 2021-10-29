@@ -1,0 +1,15 @@
+ <html>
+     <head>
+      <style>.red {color: red;}</style>
+     </head>
+<body>
+ <input type="text" name="name" id="name_input" value="Xxxx">
+ <script type="text/javascript">
+     let input = document.getElementById('name_input');
+     const startValue = input.value;
+     input.oninput = () => {
+     input.value === startValue ? input.classList.remove('red') : input.classList.add('red');
+     }
+ </script>
+    </body>
+ </html>
